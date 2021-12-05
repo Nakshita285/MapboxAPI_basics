@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" href='.//test.css' ></style>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+</body>
+<script>
+    // add a info div to the map.
+    var infoDiv = document.createDiv("div");
+        infoDiv.className.add("mapboxInfoContainer");
+        infoDiv.classList.add('h-1/4 w-1/4 border-2 border-black ');
+        infoDiv.innerHTML = `
+        <div className="DestinationNameDiv">${destinationName}</div>
+        <div className="Address" class=''>${name}</div>
+        <div className="DistanceBtwLocations" class='' >"Distance from Live Location: "+ ${Distance}</div>
+        <div className="TimeTravelBtwLocations" class=''>"Travel Time: " + ${time}</div>
+        
+        `
+</script>
+</html>
